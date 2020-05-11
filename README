@@ -1,0 +1,38 @@
+Conclusion
+----------
+- Project implements solving of a rubick's cube
+- maximal searching depth is set to 20
+- Program prints nothing if no solution is found within maximal depth.
+- Due to complexity of facts in a program some facts are taken from official
+ rubick's solver from SWI-prolog documentation. Anyway author tried to write down
+ his own facts, he even bought brand new rubick cube and a pen for that purpose but
+ due his ADHD syndrome he was unable to write them down correctly :)
+ (Note that almost everybody suffers from ADHD when trying to write down facts containing 54 subformulas)
+- Program doesn't and is unable to check whether cube's representation represents valid cube.
+
+About
+-----
+Objective of this school project is to solve rubick's cube and
+ print out solution leading to solved cube
+
+Run
+---
+The only source code is file rubick.pl. For compilation
+run `make`. This command will create executable file `rubick`.
+
+Usage
+-------
+./rubick < RUBICK_CUBE_REPR
+
+Rubick's representation
+-----------------------
+Rubick's cube on input should look like this(U-Up side, D-Down, F-Front, R-Right, B-Back, L-Left)
+UUU
+UUU
+UUU
+FFF RRR BBB LLL
+FFF RRR BBB LLL
+FFF RRR BBB LLL
+DDD
+DDD
+DDD
